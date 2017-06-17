@@ -1,17 +1,13 @@
 /*
-
 Ejercicio guiado Flog: La idea es poder escribir nuestro nombre y comentario
 para dejarlo en el fotolog.
 
 Para esto seguiremos la siguiente estructura/instrucciones en los pasos:
-
 -Crear el elemento
 -Crear el nodo de texto
 -Añadir el nodo de texto al elemento
 -Agregar atributos al elemento
 -Agregar el elemento al documento
-
-
 */
 
 function agregaPosteo() {
@@ -76,8 +72,10 @@ function drag(ev) {
 }
 
 function permitirDrop(ev){
+//evitamos que el navegador manipule nuestros datos
   ev.preventDefault();
 }
+
 function drop(ev) {
   ev.preventDefault();
   var id_foto = ev.dataTransfer.getData('text');
